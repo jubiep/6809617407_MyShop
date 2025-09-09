@@ -1,0 +1,279 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap');
+
+body{
+    margin: 0px;
+    background-color: rgb(253, 248, 241);
+    font-family: "Kodchasan", sans-serif;
+    font-size: 14px;
+}
+h1 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.banner {
+    padding: 50px;
+    background-image: url(resources/bg-banner.jpg);
+    object-fit: cover;
+    background-color: #fd92c0;
+    margin: 0; 
+}
+.banner h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-content {
+    text-align: center;
+    display:block;
+    justify-content: center;
+}
+.banner-content article {
+    box-sizing: border-box;
+    width: 750px;
+}
+.banner-content h4 {
+    font-size: 18px;
+}
+#head-banner {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 65px;
+    color: rgb(151, 91, 9);
+}
+.menu{
+    color: black;
+    background-color: #f9a4df;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    border: 3px solid rgb(151, 91, 9);
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0px 10px;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  font-size: 15px;
+}
+.menu li{
+    float: left;
+    padding: 0px 5px;
+    display: block;
+    padding: 10px;
+    margin-top: 5px ;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.menu li:hover{
+    background-color: rgb(151, 91, 9);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.menu img{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.menu img:hover{
+    background-color: #fd92c0;
+    transition: 0.3s;
+    background-color:rgb(151, 91, 9) ;
+}
+.left_menu {
+    float: right;
+}
+#line{
+    text-decoration: none;
+    background-color: #f9a4df;
+    color: black;
+}
+.promote {
+    padding: 50px;
+    text-align: center;
+}
+#bg-vid {
+    color:rgb(162, 113, 45) ;
+    border-radius: 25px;
+    border: 4px solid rgb(162, 113, 45);
+    padding: 20px;
+    width: 500px;
+    background-color:#fcfae8 ;
+}
+.promote video{
+    background-color: #fd92c0;
+    border-radius: 20px;
+    width: 500px;
+}
+#top-vid {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+    color: rgb(105, 65, 8);
+    margin-bottom: 40px;
+}
+#bottom-vid{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+    color: rgb(105, 65, 8);
+    margin-bottom: 0;
+}
+#head-product {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 30px;
+    color: rgb(105, 65, 8);
+    margin-bottom: 20px;
+}
+.ontrend{
+    margin: 100px;
+    margin-top: 20px;
+}
+.sub_ontrend{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.ontrend h3{
+    text-align: center;
+    background-image: url(resources/text-frame-removebg-preview.png);
+}
+.ontrend-product {
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 600px;
+    border: 4px solid rgb(162, 113, 45) ;
+    border-radius: 25px;
+    background-color: #fcfae8 ;
+    transition: 0.3s;
+    float: left;
+}
+.ontrend-product:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.1s;
+    transform: scale(1.05);
+}
+.ontrend-product article{
+    margin: 15px;
+}
+.ontrend-product p{
+    margin: 15px;
+}
+#products {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+.buy-botton {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+.buy-botton h4 {
+    box-sizing: border-box;
+    width: 125px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #f9a4df ;
+    transition: 0.5s;
+}
+.buy-botton img {
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #f9a4df ;
+    margin: 1.33em 0px 1.33em 10px;
+}
+
+.buy-botton img, .buy-botton h4 {
+    float: left;
+}
+.buy-botton h4:hover{
+    background-color: rgb(151, 91, 9) ;
+    color: white;
+    transition: 0.4s;
+}
+.buy-botton img:hover{
+    background-color: rgb(151, 91, 9) ;
+    transition: 0.4s;
+}
+#normal-price {
+    color: rgb(105, 65, 8);
+    font-size: 18px;
+    margin: 0;
+}
+#price1 {
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 15px;
+}
+#price2 {
+    color: red;
+}
+.onsale{
+    margin: 100px;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+.onsale h3 {
+    text-align: center;
+}
+.contact-us {
+    background-color: #f9a4df;
+    padding: 20px 50px 50px 50px;
+}
+.contact-us h3 {
+    text-align: center;
+    margin: 20px;
+}
+.contact{
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+.contact img{
+    margin-right: 10px;
+}
+#footer-2 {
+    margin-left: 200px;
+}
+.contact-us h3{
+    font-size: 20px;
+}
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: rgb(173, 112, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+}
