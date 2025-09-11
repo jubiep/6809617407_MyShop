@@ -43,7 +43,7 @@ p {
 .menu{
     color: black;
     background-color: #f9a4df;
-    overflow: hidden;
+    text-decoration: none;
     position: sticky;
     top: 0;
     border: 3px solid rgb(151, 91, 9);
@@ -52,17 +52,24 @@ p {
     padding-right: 20px;
 }
 .menu ul {
-  list-style-type: none;
-  margin: 0px 10px;
-  padding: 0;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  font-size: 15px;
+    list-style-type: none;
+    margin: 0px 10px;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    font-size: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.homepage li a{
+    color: black;
+    text-decoration: none;
+}
+.homepage li a:hover{
+    color: white;
+    transition: 0.3s;
 }
 .menu li{
-    float: left;
-    padding: 0px 5px;
     display: block;
     padding: 10px;
     margin-top: 5px ;
@@ -87,8 +94,15 @@ p {
     transition: 0.3s;
     background-color:rgb(151, 91, 9) ;
 }
+.right_menu {
+    display: flex;
+}
+.right_menu li {
+    height: 19.2px;
+}
 .left_menu {
-    float: right;
+    color: black;
+    display: flex;
 }
 #line{
     text-decoration: none;
@@ -175,13 +189,13 @@ p {
     justify-content: center;
     object-fit: cover;
 }
-.buy-botton {
+.buy-button {
     display: flex; 
     justify-content: space-between;
     align-items: center; 
     width: 100%;
 }
-.buy-botton h4 {
+.buy-button h4 {
     box-sizing: border-box;
     width: 125px;
     padding: 10px;
@@ -189,22 +203,25 @@ p {
     border: 3px solid #f9a4df ;
     transition: 0.5s;
 }
-.buy-botton img {
+.buy-button button h4 {
+    font-family: "Kodchasan", sans-serif;
+}
+.buy-button img {
     padding: 10px;
     border-radius: 20px;
     border: 3px solid #f9a4df ;
     margin: 1.33em 0px 1.33em 10px;
 }
 
-.buy-botton img, .buy-botton h4 {
+.buy-button img, .buy-button h4 {
     float: left;
 }
-.buy-botton h4:hover{
+.buy-button h4:hover{
     background-color: rgb(151, 91, 9) ;
     color: white;
     transition: 0.4s;
 }
-.buy-botton img:hover{
+.buy-button img:hover{
     background-color: rgb(151, 91, 9) ;
     transition: 0.4s;
 }
@@ -276,4 +293,59 @@ p {
 
 .chat-button:hover {
     transform: scale(1.1);
+}
+
+.drop_button {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin-top: 5px ;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    box-sizing: content-box;
+    margin-right: 10px;
+}
+
+.drop_button:hover, .drop_button:focus {
+    background-color: rgb(151, 91, 9);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcfae8 ;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f9a4df;}
+
+.show {display: block;}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
 }

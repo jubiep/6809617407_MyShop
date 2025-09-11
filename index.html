@@ -19,16 +19,51 @@
             </center>
         </div>
     </div>
+
     <div class="menu">
-            <botton><li><b>All categories</b></li></botton>
+        <ul>
             <span class="left_menu">
-                <li> <b>Log in</b></li>
+                <div class="dropdown"> <span><button onclick="myFunction()" class="drop_button"> <b>All categories</b></button></span>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="http://127.0.0.1:5500/my1stcategory.html"> Manga </a>
+                        <a href="http://127.0.0.1:5500/my2ndcategory.html"> Standy </a>
+                    </div>
+                </div>
+                <div class="homepage">
+                    <li><b><a href="http://127.0.0.1:5500/index.html"> Home page </a> </b></li>
+                </div>
+            </span>
+
+            <span class="right_menu">
+                <li><b>Log in</b></li>
                 <li id="line">│</li>
                 <li><b>Register</b></li>
-                <botton  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" ></botton>
+                <button aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" ></button>
             </span>
         </ul>
     </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.drop_button')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+    </script>
 
     <div class="content">
         <div class="promote">
@@ -56,11 +91,11 @@
                     <p style="font-size: 15px;"> <b>Jujutsu Kaizen Vol. 8 - 21</b> </p>
                     <article> "เมื่อโลกถูกคุกคามโดย <i>'คำสาป'</i> ที่เกิดจากด้านมืดของมนุษย์... <b><i>'อิตาโดริ ยูจิ'</i> </b> เด็กหนุ่มผู้มีพละกำลังเหนือมนุษย์ต้องกลายเป็นภาชนะของคำสาปที่ร้ายกาจที่สุดในประวัติศาสตร์ และเข้าร่วมโรงเรียนไสยเวทเพื่อ<i>ต่อสู้กับคำสาป และปกป้องมนุษย์</i>"</article>
                     <p id="normal-price"> <b>ราคา : 1,000 บาท</b> </p>
-                    <div class="buy-botton">
-                        <botton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </botton>
-                        <botton  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
                     </div>
                 </div>
                 <div class="ontrend-product">
@@ -69,11 +104,11 @@
                     <p style="font-size: 15px;"> <b>My Hero Academia Vol. 1 - 32</b> </p>
                     <article> "เรื่องราวของ <b><i>'มิโดริยะ อิซึคุ</i></b>' เด็กหนุ่มไร้อัตลักษณ์ที่<i>มีความฝันจะเป็นฮีโร่</i>เหมือนกับไอดอลของเขา <b><i>'ออลไมท์'</i></b> เมื่อเขาได้<i>สืบทอดพลัง 'วันฟอร์ออล'</i> ชีวิตของเขาก็เปลี่ยนไปตลอดกาล ติดตามการก้าวข้ามขีดจำกัดไปพร้อมกัน!"</article>
                     <p id="normal-price"> <b>ราคา : 1,300 บาท </b></p>
-                    <div class="buy-botton">
-                        <botton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </botton>
-                        <botton  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
                     </div>
                 </div>
                 <div class="ontrend-product" >
@@ -82,11 +117,11 @@
                     <p style="font-size: 15px;"> <b>Haikyu Vol. 1 - 45</b> </p>
                     <article> " <b><I>'ฮินาตะ โชโย'</I></b> นักวอลเลย์บอลตัวเล็กที่<i>อยากเป็นเหมือน 'ยักษ์จิ๋ว'</i> ในตำนาน ต้องมาร่วมทีมกับคู่ปรับตลอดกาลอย่าง <b><i>'คาเงยามะ โทบิโอะ'</i></b> เพื่อพาชมรมที่เคยรุ่งเรืองกลับมาผงาดอีกครั้ง และนี่คือ<i>เรื่องราวของมิตรภาพสุดซึ้ง</i>" </article>
                     <p id="normal-price"> <b>ราคา : 3,000 บาท</b> </p>
-                    <div class="buy-botton">
-                        <botton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </botton>
-                        <botton  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart"></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart"></button>
                     </div>
                 </div>
             </div>
@@ -106,11 +141,11 @@
                     ✔️ ขนาดพกพา ห้อยได้ทั้งกระเป๋า และกุญแจ <br>
                     ✔️ ของสะสมที่แฟน EVA ห้ามพลาด!<br> </article>
                     <p id="normal-price"><b> ราคา : <span id="price1" >120</span> <span id="price2"> 96 </span>บาท </b></p>
-                    <div class="buy-botton">
-                        <botton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </botton>
-                        <botton  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
                     </div>
                 </div>
                 <div class="ontrend-product">
@@ -119,11 +154,11 @@
                     <article> "เมื่อกลุ่มเพื่อนต่างนิสัย ต้องมารวมตัวกันใน <i>ชมรมสุดเพี้ยน</i> ที่ไม่เหมือนใคร
                     ชมรมนี้ไม่ได้มีแค่เสียงหัวเราะเท่านั้น แต่ยังเต็มไปด้วย<i><b>มิตรภาพ ความวุ่นวาย</b> และ<b>ความรัก</b>แบบไม่ทันตั้งตัว</i>" </article>
                     <p id="normal-price"> <b>ราคา : เล่มละ <span id="price1" >30</span> <span id="price2"> 24 </span> บาท</b> </p>
-                    <div class="buy-botton">
-                        <botton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </botton>
-                        <botton  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
                     </div>
                 </div>
                 <div class="ontrend-product" >
@@ -135,11 +170,11 @@
                     ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
                     ✔️ ของสะสมที่แฟนเรื่องนี้ห้ามพลาด!<br> </article>
                     <p id="normal-price" ><b> ราคา : <span id="price1" >400</span> <span id="price2"> 320 </span> บาท </b></p>
-                    <div class="buy-botton">
-                        <boton>
+                    <div class="buy-button">
+                        <button>
                             <h4> Buy Now </h4>
-                        </boton>
-                        <botton  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px"></botton>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px"></button>
                     </div>
                 </div>
             </div>
@@ -165,9 +200,9 @@
     </div>
 
     <div class="chat-button">
-        <botton aria-label="Chat Icon">
+        <button aria-label="Chat Icon">
             <img src="resources/messages.png">
-        </botton>
+        </button>
     </div>
 
 </body>
