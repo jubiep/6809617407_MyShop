@@ -144,20 +144,26 @@ p {
     color: rgb(105, 65, 8);
     margin-bottom: 20px;
 }
-.ontrend{
+.content1{
     margin: 100px;
     margin-top: 20px;
 }
-.sub_ontrend{
+.sub_content{
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.ontrend h3{
+.content1 h3{
     text-align: center;
     background-image: url(resources/text-frame-removebg-preview.png);
 }
-.ontrend-product {
+#content1-page1{
+    margin-top: 100px;
+}
+#content1-page2{
+    margin-top: 100px;
+}
+.content-product {
     text-align: center;
     margin: 20px;
     padding: 30px;
@@ -170,15 +176,36 @@ p {
     transition: 0.3s;
     float: left;
 }
-.ontrend-product:hover {
+.content-product:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     transition: 0.1s;
     transform: scale(1.05);
 }
-.ontrend-product article{
+#normal-price {
+    color: rgb(105, 65, 8);
+    font-size: 18px;
+    margin: 0;
+}
+#price1 {
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 15px;
+}
+#price2 {
+    color: red;
+}
+.content2{
+    margin: 100px;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+.content2 h3 {
+    text-align: center;
+}
+.content-product article{
     margin: 15px;
 }
-.ontrend-product p{
+.content-product p{
     margin: 15px;
 }
 #products {
@@ -188,6 +215,10 @@ p {
     display: flex;
     justify-content: center;
     object-fit: cover;
+}
+#amount{
+    margin-bottom: 0px;
+    color: red;
 }
 .buy-button {
     display: flex; 
@@ -224,27 +255,6 @@ p {
 .buy-button img:hover{
     background-color: rgb(151, 91, 9) ;
     transition: 0.4s;
-}
-#normal-price {
-    color: rgb(105, 65, 8);
-    font-size: 18px;
-    margin: 0;
-}
-#price1 {
-    text-decoration: line-through;
-    font-weight: normal;
-    font-size: 15px;
-}
-#price2 {
-    color: red;
-}
-.onsale{
-    margin: 100px;
-    margin-bottom: 0;
-    padding-bottom: 100px;
-}
-.onsale h3 {
-    text-align: center;
 }
 .contact-us {
     background-color: #f9a4df;

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>My shop</title>
+</head>
+<body>
+    </div>
+
+    <div class="banner">
+        <h1 id="head-banner"> TWO HANDS STORY </h1>
+        <div class="banner-content">
+            <h4><b> What products does TWO HANDS STORY sell?</b></h4>
+            <center>
+                <article> <strong>หนังสือการ์ตูนญี่ปุ่น(มังงะ) สแตนดี้ และของสะสมอื่น ๆ มือสอง เกี่ยวกับการ์ตูนญี่ปุ่นมากมาย ถูกรวบรวมไว้ที่นี่แล้ว!!</strong>
+                    สินค้าทุกอย่างที่จัดแสดงบนเว็บเป็นของสะสมที่จะเลิกเก็บแล้วของเราทั้งหมด เพื่อหาคนดูแลของสะสมของเราต่อ จึงนำมาลงขายบนเว็บเพื่อเพิ่มการมองเห็นอีกแพล็ตฟอร์ม <strong><i> หากมีข้อสงสัยใด ๆ หรืออยากได้ภาพสินค้าต่าง ๆ เพิ่มเติม <b> <br> กดปุ่มช่องแชทมุมขวาล่าง</b>ได้เลยค่ะ</i></strong> ❤ </article>
+            </center>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <span class="left_menu">
+                <div class="dropdown"> <span><button onclick="myFunction()" class="drop_button"> <b>All categories</b></button></span>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="http://127.0.0.1:5500/my1stcategory.html"> Manga </a>
+                        <a href="http://127.0.0.1:5500/my2ndcategory.html"> Standy </a>
+                    </div>
+                </div>
+                <div class="homepage">
+                    <li><b><a href="http://127.0.0.1:5500/index.html"> Home page </a> </b></li>
+                </div>
+            </span>
+
+            <span class="right_menu">
+                <li><b>Log in</b></li>
+                <li id="line">│</li>
+                <li><b>Register</b></li>
+                <button aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" ></button>
+            </span>
+        </ul>
+    </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.drop_button')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+    </script>
+
+    <div class="allcontent">
+
+        <div id="content1-page2" class="content1">
+            <h3 id="head-product"> ⟡ Standy ⟡ </h3>
+            <div class="sub_content">
+                <div class="content-product">
+                    <center><img id="products" src="resources/mangaset1-ver2.jpg" alt="สแตนดี้ลาย มิโอะ ให้ทะเลโอบใจ/ให้สายลมโอบใจ"></center>
+                    <p style="font-size: 15px;"> <b>สแตนดี้ มิโอะ ให้ทะเลโอบใจ/ให้สายลมโอบใจ</b></p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่องนี้ห้ามพลาด!<br> </article>
+                    <p id="normal-price" ><b> ราคา : <span id="price1" >400</span> <span id="price2"> 320 </span> บาท </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
+                    </div>
+                </div>
+                <div class="content-product">
+                    <center><img id="products" src="resources/ryuk-standy.jpg" alt="สแตนดี้ ลุค จากเรื่อง Death Note"></center>
+                    <a href="https://share.google/images/y6MP535r1iTyjG6aG" style="color:rgb(105, 65, 8)"> Refer </a>
+                    <p style="font-size: 15px;"> <b>สแตนดี้ Ryuk จากเรื่อง Death Note </b></p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่อง Death Note ห้ามพลาด!<br> </article>
+                    <p id="normal-price"> <b>ราคา : 666 บาท </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
+                    </div>
+                </div>
+                <div class="content-product" >
+                    <center><img id="products"src="resources/L-standy.png" alt="สแตนดี้ แอล จากเรื่อง Death Note"></center>
+                    <a href="https://share.google/images/qAb0yb7qB4sXkPrUq" style="color:rgb(105, 65, 8)" > Refer </a>
+                    <p style="font-size: 15px;"> <b>สแตนดี้ L จากเรื่อง Death Note</b> </p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่อง Death Note ห้ามพลาด!<br> </article>
+                    <p id="normal-price"> <b>ราคา : 999 บาท </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div id="content1-page2" class="content2">
+             <div class="sub_content">
+                <div class="content-product">
+                    <center><img id="products" src="resources/Light-standy.jpg" alt="สแตนดี้ ไลท์ จากเรื่อง Death Note"></center>
+                    <a href="https://share.google/images/e9SWdhxZvrax7i2BN" style="color:rgb(105, 65, 8)"> Refer </a>
+                    <p style="font-size: 15px;"><b>สแตนดี้ ไลท์ จากเรื่อง Death Note</b> </p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่อง Death Note ห้ามพลาด!<br> </article>
+                    <p id="normal-price"> <b>ราคา : 20 บาท </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
+                    </div>
+                </div>
+                <div class="content-product">
+                    <center><img id="products" src="resources/kaitokids-standy.jpg" alt="สแตนดี้ จอมโจรคิด จากเรื่อง Conan"></center>
+                    <a href="https://share.google/images/lVJ56Kklep87f2zvT" style="color:rgb(105, 65, 8)"> Refer </a>
+                    <p style="font-size: 15px;"><b>สแตนดี้ จอมโจรคิด จากเรื่อง Conan</b> </p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่อง Conan ห้ามพลาด!<br> </article>
+                    <p id="normal-price"> <b>ราคา : 20 บาท </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart" ><img src="resources/shopping-cart.png" width="20px" alt="shopping cart" ></button>
+                    </div>
+                </div>
+                <div class="content-product" >
+                    <center><img id="products"src="resources/friren-standy.png" alt="สแตนดี้ ฟรีเรน จากเรื่องคำอธิษฐานในวันที่จากลา"></center>
+                    <a href="https://share.google/images/ubaxkTpXg6NTsrP00" style="color:rgb(105, 65, 8)"> Refer </a>
+                    <p style="font-size: 15px;"> <b>สแตนดี้ ฟรีเรน จากเรื่องคำอธิษฐานในวันที่จากลา </b></p>
+                    <p style="font-size: 15px;"><b>(ลิขสิทธิ์แท้)</b> </p>
+                    <article style="text-align: left;" >
+                    ✔️ ดีไซน์คาแรคเตอร์สุดฮิต <br>
+                    ✔️ ตั้งโชว์เพื่อความสวยงาม <br>
+                    ✔️ ของสะสมที่แฟนเรื่อง Conan ห้ามพลาด!<br> </article>
+                    <p id="normal-price"> <b>ราคา : 20 บาท </b></p>
+                    <p id="amount"> <b>จำนวน : 2 ชิ้น </b></p>
+                    <div class="buy-button">
+                        <button>
+                            <h4> Buy Now </h4>
+                        </button>
+                        <button  aria-label="Add to shopping cart"><img src="resources/shopping-cart.png" width="20px"></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="contact-us">
+        <h3><b> Contact us</b> </h3>
+        <div class="contact">
+            <footer id="footer-1">
+                <p> <span><img src="resources/phone-call.png" width="20px"></span> <b>080 - 014 - 4236 </b></p>
+                <p> <span><img src="resources/envelope.png" width="20px"></span> <b>wiramon.mag@dome.tu.ac.th</b> </p>
+                <p> <span><img src="resources/calendar-clock.png" width="20px"></span>  <b>Monday - Friday</b> </p>
+                <p style="margin-left: 32px;"><b><time> 09.00 </time> - <time> 17.00 </time> </b> </p>
+            </footer>
+            <footer id="footer-2">
+                <p> <span><img src="resources/instagram.png" width="20px"></span> <b>Two_handstory</b></p>
+                <p> <span><img src="resources/facebook.png" width="20px"></span> <b>Twohands Story</b> </p>
+                <p> <span><img src="resources/twitter-alt-circle.png" width="20px"></span><b>@Two_handstory </b></p>
+                <p> <span><img src="resources/line.png" width="20px"></span><b>@Twohandstory_official</b></p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="chat-button">
+        <button aria-label="Chat Icon">
+            <img src="resources/messages.png">
+        </button>
+    </div>
+
+</body>
+</html>
